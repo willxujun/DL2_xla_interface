@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "tensorflow/core/framework/tensor.proto";
+
+message TensorList {
+    string name = 1;
+    repeated TensorProto data = 2;
+};

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message CommonTensor {
+    string name = 1;
+    repeated int32 shape = 2;
+    repeated float data = 3;
+};
+
+message CommonTensors {
+    repeated CommonTensor data = 1;
+};

@@ -1,0 +1,21 @@
+# Text form of tensorflow.tf2xla.Config proto.
+feed {
+  id { node_name: "x_y_prod" }
+  shape {
+    dim { size: 2 }
+    dim { size: 2 }
+  }
+  name: "x_y_prod"
+}
+feed {
+  id { node_name: "x_y_sum" }
+  shape {
+    dim { size: 2 }
+    dim { size: 2 }
+  }
+  name: "x_y_sum"
+}
+fetch {
+  id { node_name: "prod" }
+  name: "prod"
+}
